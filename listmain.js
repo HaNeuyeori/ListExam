@@ -49,7 +49,7 @@ function printPagination({prev, start, end, next, pageno}) {
   if(prev>0) {
     const html=`
       <li class="page-item">
-        <a class="page-link" href="list.html?pageno=${prev}">이전으로</a>
+        <a class="page-link" href="listexam.html?pageno=${prev}">이전으로</a>
       </li>
     `;
     $p.append(html);
@@ -60,7 +60,7 @@ function printPagination({prev, start, end, next, pageno}) {
       className = 'page-item active';
     const html=`
       <li class="${className}">
-        <a class="page-link" href="list.html?pageno=${i}">${i}</a>
+        <a class="page-link" href="listexam.html?pageno=${i}">${i}</a>
       </li>
     `;
     $p.append(html);
@@ -68,7 +68,7 @@ function printPagination({prev, start, end, next, pageno}) {
   if(next>0) {
     const html=`
       <li class="page-item">
-        <a class="page-link" href="list.html?pageno=${next}">다음으로</a>
+        <a class="page-link" href="listexam.html?pageno=${next}">다음으로</a>
       </li>
     `;
     $p.append(html);
